@@ -34,8 +34,8 @@ jobs:
           docker pull ${{ env.NGINX_IMAGE }} || true
 
       - name: Check Docker Compose Version
-          run: docker-compose version
-          
+        run: docker-compose version
+
       - name: Build images
         run: |
           docker-compose -f docker-compose.ci.yml build
