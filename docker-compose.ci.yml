@@ -23,3 +23,6 @@ services:
       - "80:80"
     volumes:
       - website:/usr/share/nginx/html/website # Copy React App's build files to the Nginx directory
+
+  volumes:
+    website:
